@@ -2,6 +2,7 @@
   "name": "linkedin",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.2",
     "@testing-library/jest-dom": "^5.16.5",
@@ -9,8 +10,13 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^4.6.1",
     "bootstrap-icons": "^1.10.3",
+    "cors": "^2.8.5",
     "date-fns": "^2.29.3",
+    "express": "^4.18.2",
+    "express-list-endpoints": "^6.0.0",
+    "http-errors": "^2.0.0",
     "mdb-react-ui-kit": "^5.1.0",
+    "pg": "^8.10.0",
     "react": "^18.2.0",
     "react-bootstrap": "^1.6.4",
     "react-dom": "^18.2.0",
@@ -20,13 +26,15 @@
     "react-scripts": "5.0.1",
     "redux-persist": "^6.0.0",
     "redux-persist-transform-encrypt": "^4.0.0",
+    "sequelize": "^6.30.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "nodemon -r dotenv/config ./src/server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -45,5 +53,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22"
   }
 }
